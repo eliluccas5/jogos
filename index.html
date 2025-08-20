@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.: Jogos :. </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <h1>
+        Selecione um Jogo <i class="fas fa-chevron-down"></i>
+    </h1>
+
+
+    <div class="button-container">
+        <button id="btnMemoria">Jogo da Memória</button>
+        <button id="btnForca">Jogo da Forca</button>
+    </div>
+
+    <div id="jogoMemoria" class="jogo-container">
+        <h2>Jogo da Memória</h2>
+        <div class="jogo-da-memoria"></div>
+        <p id="memoria-mensagem"></p>
+        <button id="btnReiniciarMemoria"><i class="fas fa-redo"></i> Reiniciar Jogo </button>
+    </div>
+
+    <div id="jogoForca" class="jogo-container">
+        <h2>Jogo da Forca <img src="/img/forca.png" alt="icone-forca" width="40" height="40"></h2>
+        <div class="forca-container">
+            <p id="LetraDisplay">----</p>
+            <p>Letras erradas: <span id="erroLetra"></span></p>
+            <input type="text" id="LetraEntrada" maxlength="1" autofocus />
+            <button onclick="guessLetter()">Chutar Letra</button>
+            <p id="message"></p>
+            <button id="btnReiniciarForca">
+                <i class="fas fa-redo"></i> Reiniciar Jogo </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        &copy; 2025 @ataldaelii. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
