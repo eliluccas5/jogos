@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #fdf9f9;
-    background-image: url('../img/bg_index.jpg');
+    background-image: url('/img/bg_index.jpg');
     margin: 0;
     padding: 2rem;
 }
@@ -117,4 +117,5 @@ footer {
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+
 }
